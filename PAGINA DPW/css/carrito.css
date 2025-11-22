@@ -1,0 +1,118 @@
+/* Contenedor de productos en el carrito */
+body {
+    background: linear-gradient(135deg, #dd7cdd, #e09658,salmon);
+  }
+#cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  /* Tarjeta de producto en el carrito */
+  .tarjeta-producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--color-acento-claro);
+    border-radius: 8px;
+    padding: 10px 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  }
+  
+  .tarjeta-producto img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 15px;
+  }
+  
+  .tarjeta-producto h3 {
+    flex: 1;
+    margin: 0;
+    font-size: 1rem;
+    color: var(--color-texto);
+  }
+  
+  .tarjeta-producto span {
+    font-weight: bold;
+    color: var(--color-acento);
+    margin: 0 10px;
+  }
+  
+  /* Controles de cantidad */
+  .tarjeta-producto div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .tarjeta-producto button {
+    background-color: var(--color-acento);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .tarjeta-producto button:hover {
+    background-color: #d94f20;
+  }
+  
+  .cantidad {
+    min-width: 20px;
+    text-align: center;
+  }
+  
+  /* Mensaje carrito vacío */
+  #carrito-vacio {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 20px;
+    color: #555;
+  }
+  
+  /* Sección totales */
+  #totales {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 2px solid var(--color-acento-claro);
+    text-align: center;
+  }
+  
+  #totales p {
+    margin: 8px 0;
+    font-size: 1rem;
+  }
+  
+  #totales button {
+    margin: 10px 5px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 200ms;
+  }
+  
+  #comprar {
+    background-color: var(--color-acento);
+    color: white;
+  }
+  
+  #comprar:disabled {
+    background-color: var(--color-acento-claro);
+    cursor: not-allowed;
+  }
+  
+  #reiniciar {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  #reiniciar:hover {
+    background-color: #999;
+  }
+  
